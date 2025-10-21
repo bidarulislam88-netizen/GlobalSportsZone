@@ -13,6 +13,7 @@
   h2 {
     text-align: center;
     color: #222;
+    margin-top: 40px;
   }
   table {
     width: 100%;
@@ -21,6 +22,7 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     border-radius: 10px;
     overflow: hidden;
+    margin-bottom: 50px;
   }
   th, td {
     padding: 12px;
@@ -63,8 +65,16 @@
     0%, 50%, 100% { opacity: 1; }
     25%, 75% { opacity: 0; }
   }
+  .live::before { content: "🔴 "; }
   .play {
     background: #4CAF50;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  .ended {
+    background: #999;
     color: white;
     padding: 6px 12px;
     border-radius: 20px;
@@ -74,8 +84,6 @@
     color: #222;
     font-weight: bold;
   }
-
-  /* Responsive */
   @media screen and (max-width: 768px) {
     table, th, td {
       font-size: 14px;
@@ -87,7 +95,6 @@
 <body>
 
 <h2>⚽ Football match schedule</h2>
-
 <table>
   <tr>
     <th>League</th>
@@ -97,181 +104,59 @@
     <th>Link</th>
     <th>Status</th>
   </tr>
-  
-  <!-- UPCOMING MATCHES -->
   <tr>
     <td class="league">AFC Champions League Elite 25/26</td>
     <td class="title">Melbourbe vs Buriram United</td>
     <td>2025-10-21T13:45:00</td>
     <td class="countdown" data-time="2025-10-21T13:45:00"></td>
     <td><a href="https://www.effectivegatecpm.com/xkjh55mzx?key=d65d7b18dbba53fd19e9731c311b2d68" class="watch" target="_blank">Watch</a></td>
-    <td><span class="play">PLAY</span></td>
-  </tr>
-  <tr>
-    <td class="league">UEFA Champions League</td>
-    <td class="title">Barcelona vs Olympiacos FC</td>
-    <td>2025-10-21T09:00:00</td>
-    <td class="countdown" data-time="2025-10-21T22:45:00"></td>
-    <td><a href="https://www.effectivegatecpm.com/xkjh55mzx?key=d65d7b18dbba53fd19e9731c311b2d68" class="watch" target="_blank">Watch</a></td>
-    <td><span class="play">PLAY</span></td>
+    <td><span class="play status">PLAY</span></td>
   </tr>
     <tr>
+    <td class="league">AFC Champions League Elite 25/26</td>
+    <td class="title">Melbourbe vs Buriram United</td>
+    <td>2025-10-21T13:45:00</td>
+    <td class="countdown" data-time="2025-10-21T13:45:00"></td>
+    <td><a href="https://www.effectivegatecpm.com/xkjh55mzx?key=d65d7b18dbba53fd19e9731c311b2d68" class="watch" target="_blank">Watch</a></td>
+    <td><span class="play status">PLAY</span></td>
+   <tr>
+    <td class="league">UEFA Champions League</td>
+    <td class="title">Barcelona vs Olympiacos FC</td>
+    <td>2025-10-21T22:45:00</td>
+    <td class="countdown" data-time="2025-10-21T22:45:00"></td>
+    <td><a href="https://www.effectivegatecpm.com/xkjh55mzx?key=d65d7b18dbba53fd19e9731c311b2d68" class="watch" target="_blank">Watch</a></td>
+    <td><span class="play status">PLAY</span></td>
+   <tr>
     <td class="league">AFC Champions League Elite 25/26</td>
     <td class="title">Al-Hilal vs Al-sadd</td>
     <td>2025-10-22T00:15:00</td>
     <td class="countdown" data-time="2025-10-22T00:15:00"></td>
     <td><a href="https://www.effectivegatecpm.com/xkjh55mzx?key=d65d7b18dbba53fd19e9731c311b2d68" class="watch" target="_blank">Watch</a></td>
-    <td><span class="play">PLAY</span></td>
-  </tr>
-    <tr>
+    <td><span class="play status">PLAY</span></td>
+   <tr>
     <td class="league">Championship 25/26</td>
     <td class="title">Hull City vs Leiceter City</td>
     <td>2025-10-22T00:45:00</td>
     <td class="countdown" data-time="2025-10-22T00:45:00"></td>
     <td><a href="https://www.effectivegatecpm.com/xkjh55mzx?key=d65d7b18dbba53fd19e9731c311b2d68" class="watch" target="_blank">Watch</a></td>
-    <td><span class="play">PLAY</span></td>
-  </tr>
-    <tr>
+    <td><span class="play status">PLAY</span></td>
+  <tr>
     <td class="league">UEFA Champions League 25/26</td>
     <td class="title">Arsenal vs Atletico Madrid</td>
     <td>2025-10-22T01:00:00</td>
     <td class="countdown" data-time="2025-10-22T01:00:00"></td>
     <td><a href="https://www.effectivegatecpm.com/xkjh55mzx?key=d65d7b18dbba53fd19e9731c311b2d68" class="watch" target="_blank">Watch</a></td>
-    <td><span class="play">PLAY</span></td>
-  </tr>
+    <td><span class="play status">PLAY</span></td>
       <tr>
     <td class="league">UEFA Champions League 25/26</td>
     <td class="title">Villarreal vs Manchester City</td>
     <td>2025-10-22T01:00:00</td>
     <td class="countdown" data-time="2025-10-22T01:00:00"></td>
     <td><a href="https://www.effectivegatecpm.com/xkjh55mzx?key=d65d7b18dbba53fd19e9731c311b2d68" class="watch" target="_blank">Watch</a></td>
-    <td><span class="play">PLAY</span></td>
-  </tr>
+    <td><span class="play status">PLAY</span></td>
 </table>
 
-<script>
-// Countdown Timer (only for non-live matches)
-function updateCountdowns() {
-  const elements = document.querySelectorAll('.countdown');
-  const now = new Date().getTime();
-
-  elements.forEach(el => {
-    const matchTime = new Date(el.dataset.time).getTime();
-    if (!matchTime) return;
-
-    const distance = matchTime - now;
-    if (distance <= 0) {
-      el.innerHTML = "Today";
-      return;
-    }
-
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const secs = Math.floor((distance % (1000 * 60)) / 1000);
-
-    el.innerHTML = `${days}d ${hours}h ${mins}m ${secs}s`;
-  });
-}
-
-setInterval(updateCountdowns, 1000);
-updateCountdowns();
-</script>
-
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="bn">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cricket Match Schedule</title>
-<style>
-  body {
-    font-family: 'Poppins', sans-serif;
-    background: #f8f9fa;
-    margin: 20px;
-  }
-  h2 {
-    text-align: center;
-    color: #222;
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    background: white;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  th, td {
-    padding: 12px;
-    text-align: center;
-    border-bottom: 1px solid #ddd;
-  }
-  th {
-    background: #f1f1f1;
-    color: #333;
-  }
-  tr:hover {
-    background: #f9f9f9;
-  }
-  .league {
-    color: #c00;
-    font-weight: bold;
-  }
-  .title {
-    color: #027a48;
-    font-weight: bold;
-  }
-  .watch {
-    color: #fff;
-    background: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 6px 12px;
-    border-radius: 6px;
-    transition: 0.2s;
-  }
-  .watch:hover {
-    background: #0056b3;
-  }
-  .live {
-    color: red;
-    font-weight: bold;
-    animation: blink 1s infinite;
-  }
-  @keyframes blink {
-    0%, 50%, 100% { opacity: 1; }
-    25%, 75% { opacity: 0; }
-  }
-  .play {
-    background: #4CAF50;
-    color: white;
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-weight: bold;
-  }
-  .countdown {
-    color: #222;
-    font-weight: bold;
-  }
-
-  /* Responsive */
-  @media screen and (max-width: 768px) {
-    table, th, td {
-      font-size: 14px;
-      padding: 8px;
-    }
-  }
-</style>
-</head>
-<body>
-
 <h2>🏏 Cricket match schedule</h2>
-
 <table>
   <tr>
     <th>League</th>
@@ -281,63 +166,67 @@ updateCountdowns();
     <th>Link</th>
     <th>Status</th>
   </tr>
-  <!-- LIVE MATCHES -->
   <tr>
     <td class="league">PAK vs SA Test Match</td>
     <td class="title">Pakistan vs South Africa</td>
-    <td>Today</td>
-    <td>Today</td>
+    <td>2025-10-21T11:20:00</td>
+    <td class="countdown" data-time="2025-10-21T11:20:00"></td>
     <td><a href="https://globalsportszone25.blogspot.com/2025/10/pakistan-vs-south-africa-test-series.html" class="watch" target="_blank">Watch</a></td>
-    <td class="live">🔴 LIVE</td>
+    <td><span class="play status">PLAY</span></td>
   </tr>
-    <tr>
-    <td class="league">Afg vs Zim Test Match</td>
-    <td class="title">Afghanistan vs Zimbabwe</td>
-    <td>Today</td>
-    <td>Today</td>
-    <td><a href="https://www.effectivegatecpm.com/nretx6iv1y?key=8ad3652c3aca0fb85c6b31f9461da35c" class="watch" target="_blank">Watch</a></td>
-    <td class="live">🔴 LIVE</td>
-  </tr>
-      <tr>
-    <td class="league">IWCWC 2025</td>
-    <td class="title">SA Woman vs Pak Woman</td>
-    <td>Today</td>
-    <td>Today</td>
-    <td><a href="https://www.effectivegatecpm.com/xkjh55mzx?key=d65d7b18dbba53fd19e9731c311b2d68" class="watch" target="_blank">Watch</a></td>
-    <td class="live">🔴 LIVE</td>
-  </tr>
-  <!-- UPCOMING MATCHES -->
   <tr>
     <td class="league">Ban vs WI</td>
     <td class="title">Bangladesh vs West Indies</td>
     <td>2025-10-21T13:30:00</td>
     <td class="countdown" data-time="2025-10-21T13:30:00"></td>
     <td><a href="https://globalsportszone25.blogspot.com/2025/10/bangladesh-vs-west-indies-2nd-odi-match.html" class="watch" target="_blank">Watch</a></td>
-    <td><span class="play">PLAY</span></td>
+    <td><span class="play status">PLAY</span></td>
   </tr>
-  <tr>
-    <td class="league">India vs AUS</td>
-    <td class="title">India vs Australia</td>
-    <td>2025-10-23T09:00:00</td>
-    <td class="countdown" data-time="2025-10-23T09:00:00"></td>
-    <td><a href="https://globalsportszone25.blogspot.com/2025/10/australia-vs-india-2nd-odi-match.html" class="watch" target="_blank">Watch</a></td>
-    <td><span class="play">PLAY</span></td>
-  </tr>
+    <tr>
+    <td class="league">Zim vs Afg Test Match</td>
+    <td class="title">Zimbabwe vs Afghanistan</td>
+    <td>2025-10-21T14:00:00</td>
+    <td class="countdown" data-time="2025-10-21T14:00:00"></td>
+    <td><a href="https://globalsportszone25.blogspot.com/2025/10/bangladesh-vs-west-indies-2nd-odi-match.html" class="watch" target="_blank">Watch</a></td>
+    <td><span class="play status">PLAY</span></td>
+        <tr>
+    <td class="league">Icc Woman WC</td>
+    <td class="title">Sa Woman vs Pak Woman</td>
+    <td>2025-10-21T15:30:00</td>
+    <td class="countdown" data-time="2025-10-21T15:30:00"></td>
+    <td><a href="https://globalsportszone25.blogspot.com/2025/10/bangladesh-vs-west-indies-2nd-odi-match.html" class="watch" target="_blank">Watch</a></td>
+    <td><span class="play status">PLAY</span></td>
 </table>
 
 <script>
-// Countdown Timer (only for non-live matches)
 function updateCountdowns() {
-  const elements = document.querySelectorAll('.countdown');
+  const rows = document.querySelectorAll('tr');
   const now = new Date().getTime();
 
-  elements.forEach(el => {
-    const matchTime = new Date(el.dataset.time).getTime();
+  rows.forEach(row => {
+    const countdownEl = row.querySelector('.countdown');
+    const statusEl = row.querySelector('.status');
+    if (!countdownEl || !statusEl) return;
+
+    const matchTime = new Date(countdownEl.dataset.time).getTime();
     if (!matchTime) return;
 
+    const matchDuration = 8 * 60 * 60 * 1000; // 8 hours
+    const endTime = matchTime + matchDuration;
     const distance = matchTime - now;
-    if (distance <= 0) {
-      el.innerHTML = "Today";
+    const endDistance = endTime - now;
+
+    if (distance <= 0 && endDistance > 0) {
+      countdownEl.textContent = "Now Live";
+      statusEl.innerHTML = "LIVE";
+      statusEl.className = "status live";
+      return;
+    }
+
+    if (endDistance <= 0) {
+      countdownEl.textContent = "Match Ended";
+      statusEl.innerHTML = "ENDED";
+      statusEl.className = "status ended";
       return;
     }
 
@@ -346,7 +235,7 @@ function updateCountdowns() {
     const mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const secs = Math.floor((distance % (1000 * 60)) / 1000);
 
-    el.innerHTML = `${days}d ${hours}h ${mins}m ${secs}s`;
+    countdownEl.textContent = `${days}d ${hours}h ${mins}m ${secs}s`;
   });
 }
 
@@ -361,30 +250,3 @@ Developed by Naeem
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
